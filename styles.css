@@ -30,14 +30,6 @@ body {
     color: #333333;
 }
 
-/* Monospace Font for Introductory Text */
-.intro-monospace {
-    font-family: monospace;
-    font-size: 1.1em;
-    color: #333333;
-    line-height: 1.6;
-}
-
 /* Navigation */
 .navbar {
     display: flex;
@@ -126,16 +118,16 @@ body {
 
 /* Footer */
 footer {
-    background-color: #f3ede2; /* Light sand tone */
-    color: #4A403A; /* Earthy brown for text */
+    background-color: #f3ede2;
+    color: #4A403A;
     padding: 30px 5%;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    transition: background-color 0.6s cubic-bezier(0.4, 0.0, 0.2, 1); /* Slower, heavier easing */
+    transition: background-color 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 footer:hover {
-    background-color: #e0d8c8; /* Slightly darker sand tone on hover */
+    background-color: #e0d8c8;
 }
 
 .footer-container {
@@ -167,7 +159,7 @@ footer:hover {
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em;
-    transition: color 0.6s cubic-bezier(0.4, 0.0, 0.2, 1); /* Slower, weighted transition */
+    transition: color 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
 .footer-social a:hover {
@@ -191,4 +183,66 @@ footer:hover {
 .footer-link:hover .aims-hover {
     color: #8A7E72;
     text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* Small screens (tablets, large phones) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 80px 0;
+    }
+
+    .lecturers-section {
+        padding: 40px 5%;
+    }
+
+    .lecturer-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-container {
+        max-width: 100%;
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    .monospace {
+        font-size: 1.5em;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .about-section h2,
+    .lecturers-lineup li {
+        font-size: 1em;
+    }
+
+    .hero-content {
+        padding: 0 20px;
+    }
+
+    footer {
+        padding: 20px 5%;
+    }
+
+    .footer-monospace,
+    .footer-info {
+        font-size: 0.9em;
+    }
 }
