@@ -8,58 +8,51 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="logo"><span class="monospace">MLSS Senegal 2025</span></div>
             <ul class="nav-links">
                 <li><a href="#schedule">Schedule</a></li>
                 <li><a href="#apply">Apply</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li> <!-- Link now points to footer -->
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Left Column (Introduction) -->
-        <div class="left-column">
-            <h2 class="monospace">MLSS Senegal 2025</h2>
+    <!-- Main Content and Sidebar Container -->
+    <div class="content-container">
+        <!-- Block A: Main Content -->
+        <div class="main-content">
+            <!-- Title and Introduction -->
             <p class="intro-monospace">
-                The Machine Learning Summer School (<a href="http://mlss.cc" class="hover-link" target="_blank">MLSS</a>) has been hosted in countries around the globe, gathering top experts and emerging talent in artificial intelligence and machine learning. This year, we’re excited to bring MLSS to West Africa for the first time, with Senegal as our host country. The program offers PhD students from around the world a unique opportunity to dive into the fundamentals of machine learning and explore the latest cutting-edge techniques in the field.
+                The <a href="http://mlss.cc" class="hover-link" target="_blank">Machine Learning Summer School (MLSS)</a> has been hosted in countries around the globe, gathering top experts and emerging talent in artificial intelligence and machine learning. This year, we’re excited to bring MLSS to West Africa for the first time, with Senegal as our host country. The program offers PhD students from around the world a unique opportunity to dive into the fundamentals of machine learning and explore the latest cutting-edge techniques in the field.
             </p>
-        </div>
 
-        <!-- Main Column (Lecturer List) -->
-        <div class="main-column">
-            <ul class="lecturers-lineup">
-                <li><img src="images/Adji_Bousso_Dieng.jpg" alt="Adji Bousso Dieng" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Adji Bousso Dieng</span><br>Princeton</span></li>
-                <li><img src="images/Ashia_Wilson.webp" alt="Ashia Wilson" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Ashia Wilson</span><br>MIT</span></li>
-                <li><img src="images/Demba_Ba.png" alt="Demba Ba" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Demba Ba</span><br>Harvard</span></li>
-                <li><img src="images/Franca_Hoffmann.jpeg" alt="Franca Hoffmann" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Franca Hoffmann</span><br>Caltech</span></li>
-                <li><img src="images/Marco_Cuturi.png" alt="Marco Cuturi" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Marco Cuturi</span><br>Apple</span></li>
-            </ul>
-        </div>
-
-        <!-- Right Column (Speaker Preview) -->
-        <div class="right-column">
+            <!-- Speaker Preview Heading -->
             <h3 class="monospace">Speaker Lineup Preview – More to Come!</h3>
-            <ul class="lecturers-lineup">
-                <li><img src="images/Mathieu_Blondel.png" alt="Mathieu Blondel" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Mathieu Blondel</span><br>Google</span></li>
-                <li><img src="images/Natalie_Schluter.jpeg" alt="Natalie Schluter" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Natalie Schluter</span><br>Apple</span></li>
-                <li><img src="images/Peter_Richtarik.jpeg" alt="Peter Richtarik" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Peter Richtarik</span><br>KAUST</span></li>
-                <li><img src="images/Samory_Kpotufe.jpeg" alt="Samory Kpotufe" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Samory Kpotufe</span><br>Columbia</span></li>
-                <li><img src="images/Sanmi_Koyejo.png" alt="Sanmi Koyejo" class="lecturer-photo"><span class="lecturer-info"><span class="monospace">Sanmi Koyejo</span><br>Stanford</span></li>
+
+            <!-- Lecturers List in Three Columns -->
+            <ul class="lecturers-grid">
+                <li><img src="images/Adji_Bousso_Dieng.jpg" alt="Adji Bousso Dieng" class="lecturer-photo"><a href="https://adjiboussodieng.org" target="_blank" class="lecturer-name">Adji Bousso Dieng</a><span class="workplace">Princeton</span></li>
+                <li><img src="images/Ashia_Wilson.webp" alt="Ashia Wilson" class="lecturer-photo"><a href="https://www.ashiawilson.com" target="_blank" class="lecturer-name">Ashia Wilson</a><span class="workplace">MIT</span></li>
+                <li><img src="images/Demba_Ba.png" alt="Demba Ba" class="lecturer-photo"><a href="http://www.demba-ba.org" target="_blank" class="lecturer-name">Demba Ba</a><span class="workplace">Harvard</span></li>
+                <li><img src="images/Franca_Hoffmann.jpeg" alt="Franca Hoffmann" class="lecturer-photo"><a href="https://francahoffmann.com" target="_blank" class="lecturer-name">Franca Hoffmann</a><span class="workplace">Caltech</span></li>
+                <li><img src="images/Marco_Cuturi.png" alt="Marco Cuturi" class="lecturer-photo"><a href="http://marcocuturi.net" target="_blank" class="lecturer-name">Marco Cuturi</a><span class="workplace">Apple</span></li>
+                <li><img src="images/Mathieu_Blondel.png" alt="Mathieu Blondel" class="lecturer-photo"><a href="https://mblondel.org" target="_blank" class="lecturer-name">Mathieu Blondel</a><span class="workplace">Google</span></li>
+                <li><img src="images/Natalie_Schluter.jpeg" alt="Natalie Schluter" class="lecturer-photo"><a href="https://natschluter.github.io" target="_blank" class="lecturer-name">Natalie Schluter</a><span class="workplace">Apple</span></li>
+                <li><img src="images/Peter_Richtarik.jpeg" alt="Peter Richtarik" class="lecturer-photo"><a href="https://richtarik.org" target="_blank" class="lecturer-name">Peter Richtarik</a><span class="workplace">KAUST</span></li>
+                <li><img src="images/Samory_Kpotufe.jpeg" alt="Samory Kpotufe" class="lecturer-photo"><a href="https://www.columbia.edu/~skk2175/" target="_blank" class="lecturer-name">Samory Kpotufe</a><span class="workplace">Columbia</span></li>
+                <li><img src="images/Sanmi_Koyejo.png" alt="Sanmi Koyejo" class="lecturer-photo"><a href="https://cs.stanford.edu/~sanmi/" target="_blank" class="lecturer-name">Sanmi Koyejo</a><span class="workplace">Stanford</span></li>
             </ul>
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer id="contact">
-        <div class="footer-container">
-            <p class="footer-item">mlss.senegal2025@gmail.com</p>
-            <span class="footer-separator">|</span>
-            <p class="footer-item">Hosted by <a href="https://aims-senegal.org/fr/" class="footer-link" target="_blank">AIMS-Senegal</a></p>
+    <!-- Footer Section (Moved Block B Here) -->
+    <footer id="contact" class="sidebar"> <!-- Added id="contact" here -->
+        <div class="sidebar-content">
+            <p>mlss.senegal2025@gmail.com | Hosted by <a href="https://aims-senegal.org/fr/" class="sidebar-link" target="_blank">AIMS-Senegal</a></p>
         </div>
     </footer>
 
