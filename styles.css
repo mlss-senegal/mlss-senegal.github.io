@@ -79,11 +79,12 @@ body {
     text-align: center;
 }
 
+/* Enlarged Circular Lecturer Photo */
 .lecturer-photo {
-    width: 80px;
-    height: 80px;
+    width: 120px; /* Increased width */
+    height: 120px; /* Increased height */
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; /* Keeps the circular shape */
     margin-bottom: 5px;
 }
 
@@ -94,6 +95,7 @@ body {
     color: #333333;
     text-decoration: none;
     margin-bottom: 3px;
+    transition: color 0.6s ease; /* Adds a smooth, slower transition */
 }
 
 .lecturer-name:hover {
@@ -153,7 +155,9 @@ footer .sidebar-content p {
     }
 
     .lecturer-photo {
-        width: 60px;
-        height: 60px;
+        width: 80px; /* Slightly reduced for small screens */
+        height: 80px;
     }
 }
+
+
