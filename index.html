@@ -11,29 +11,30 @@
     <!-- Header Section -->
     <header>
         <nav class="navbar">
-            <div class="logo"><span class="monospace">MLSS Senegal 2025</span></div>
+            <div class="logo">
+                <span class="monospace">MLSS Senegal 2025</span><br>
+                <em style="font-size: 0.9em; display: block; text-align: center;">June 23 - July 4</em>
+            </div>
             <ul class="nav-links">
-                <!-- <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#apply">Apply</a></li>
-                <li><a href="#sponsors">Sponsors</a></li> -->
-                <li><a href="#contact">Contact</a></li> <!-- Link now points to footer -->
+                <li><a href="#application" class="monospace">Application</a></li>
+                <li><a href="#sponsors-section" class="monospace">Sponsors</a></li>
+                <li><a href="#contact" class="monospace">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content and Sidebar Container -->
     <div class="content-container">
-        <!-- Block A: Main Content -->
+        <!-- Main Content -->
         <div class="main-content">
-            <!-- Title and Introduction -->
             <p class="intro-monospace">
-                The <a href="http://mlss.cc" class="hover-link" target="_blank">Machine Learning Summer School (MLSS)</a> has been hosted in countries around the globe, gathering top experts and emerging talent in artificial intelligence and machine learning. We’re excited to bring MLSS to West Africa for the first time, with Senegal as our host country. The program offers PhD students from around the world a unique opportunity to dive into the fundamentals of machine learning and explore the latest cutting-edge techniques in the field.
+                The <a href="http://mlss.cc" class="hover-link" target="_blank">Machine Learning Summer School (MLSS)</a> has been hosted in countries around the globe, gathering top experts and emerging talent in artificial intelligence and machine learning. We’re excited to bring MLSS to West Africa for the first time, with Senegal as our host country. The program offers PhD students from around the world a unique opportunity to dive into the fundamentals of machine learning and explore the latest techniques.
             </p>
 
-            <!-- Speaker Preview Heading -->
+            <!-- Speaker Preview -->
             <h3 class="monospace">Speaker Lineup Preview – More to Come!</h3>
 
-            <!-- Lecturers List in Three Columns -->
+            <!-- Lecturers Grid -->
             <ul class="lecturers-grid">
                 <li><img src="images/Adji_Bousso_Dieng.jpg" alt="Adji Bousso Dieng" class="lecturer-photo"><a href="https://adjiboussodieng.org" target="_blank" class="lecturer-name">Adji Bousso Dieng</a><span class="workplace">Princeton</span></li>
                 <li><img src="images/Ashia_Wilson.webp" alt="Ashia Wilson" class="lecturer-photo"><a href="https://www.ashiawilson.com" target="_blank" class="lecturer-name">Ashia Wilson</a><span class="workplace">MIT</span></li>
@@ -46,13 +47,38 @@
                 <li><img src="images/Samory_Kpotufe.jpeg" alt="Samory Kpotufe" class="lecturer-photo"><a href="https://www.columbia.edu/~skk2175/" target="_blank" class="lecturer-name">Samory Kpotufe</a><span class="workplace">Columbia</span></li>
                 <li><img src="images/Sanmi_Koyejo.png" alt="Sanmi Koyejo" class="lecturer-photo"><a href="https://cs.stanford.edu/~sanmi/" target="_blank" class="lecturer-name">Sanmi Koyejo</a><span class="workplace">Stanford</span></li>
             </ul>
+
+            <!-- Subtle Horizontal Line -->
+            <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
+
+            <p><strong>Dates:</strong> June 23 - August 4</p>
+            <p><strong>Location:</strong> AIMS Mbour</p>
+            <p class="intro-monospace">AIMS Mbour is a scenic location situated along the Atlantic coast of Senegal. The venue is approximately a 1.5-hour drive from Dakar city center and around 30 kilometers from Blaise Diagne International Airport, offering convenient access for international participants.</p>
+
+            <!-- Application Process -->
+            <h3 id="application" class="monospace">Application</h3>
+            <p class="intro-monospace">The application process is open to PhD students, post-docs and other advanced learners. Applicants are required to submit a one-page <em>self</em>-recommendation letter explaining how the summer school will benefit them, along with a one-page CV summarizing your contributions in machine learning.</p>            
+            <p class="intro-monospace"><em>Please note that the registration fee does not cover accommodation. Participants are responsible for arranging their own lodging, with assistance provided via our website.</em></p>
+            <p><strong>Application Period:</strong> December 15 - February 28 </p>
+            <p><strong>Notification of Acceptance:</strong> March 31</p>
+            <p><strong>Fees:</strong> $500 due on April 23</p>
         </div>
     </div>
 
-    <!-- Footer Section (Moved Block B Here) -->
-    <footer id="contact" class="sidebar"> <!-- Added id="contact" here -->
-        <div class="sidebar-content">
-            <p>mlss.senegal2025@gmail.com | Hosted by <a href="https://aims-senegal.org/fr/" class="sidebar-link" target="_blank">AIMS-Senegal</a></p>
+    <!-- Footer Section -->
+    <footer id="contact" class="footer-container">
+        <div class="footer-content" id="sponsors-section">
+            <div class="contact-info">
+                <p>mlss.senegal2025@gmail.com</p>
+                <p>Hosted by <a href="https://aims-senegal.org/fr/" class="sidebar-link" target="_blank">AIMS-Senegal</a></p>
+            </div>
+            <div class="vertical-divider"></div>
+            <div class="sponsor-logos">
+                <a href="https://www.apple.com" target="_blank"><img src="images/apple_logo.png" alt="Apple Logo" class="sponsor-logo"></a>
+                <a href="https://mistral.ai" target="_blank"><img src="images/mistral_logo.webp" alt="Mistral Logo" class="sponsor-logo"></a>
+                <a href="https://ai-hubsenegal.sn/en/" target="_blank"><img src="images/aihubs_logo.png" alt="AI Hubs Senegal Logo" class="sponsor-logo"></a>
+                <a href="https://galsen.ai" target="_blank"><img src="images/galsenai_logo.png" alt="Galsen AI Logo" class="sponsor-logo"></a>          
+            </div>
         </div>
     </footer>
 
