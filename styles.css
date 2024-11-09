@@ -13,15 +13,6 @@ body {
     padding-top: 60px;
 }
 
-/* Monospace styling for intro paragraph */
-.intro-monospace {
-    font-family: monospace;
-    font-size: 1em;
-    color: #333333;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
 /* Header */
 .navbar {
     display: flex;
@@ -48,18 +39,12 @@ body {
     font-size: 1.1em;
 }
 
-/* Main Content */
+/* Content Container */
 .content-container {
-    display: flex;
-    gap: 20px;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 0;
-}
-
-.main-content {
-    padding-right: 20px;
 }
 
 /* Lecturers Grid */
@@ -106,7 +91,25 @@ body {
     color: #555555;
 }
 
-/* Footer */
+/* Info Block Styling */
+.info-block {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: #f2ece7;
+    border-left: 5px solid #d4b595;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.block-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d4b595;
+}
+
 .footer-container {
     display: flex;
     align-items: center;
@@ -124,16 +127,8 @@ body {
 }
 
 .contact-info {
-    text-align: left;
     font-size: 1em;
     color: #333333;
-}
-
-.vertical-divider {
-    width: 1px;
-    height: 50px;
-    background-color: #ccc;
-    margin: 0 20px;
 }
 
 .sponsor-logos {
@@ -142,26 +137,43 @@ body {
 }
 
 .sponsor-logo {
-    width: auto;
-    height: 50px; /* Uniform height for proportionate scaling */
+    height: 50px;
 }
 
-/* Responsive */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .content-container {
-        flex-direction: column;
+    .lecturers-grid {
+        grid-template-columns: 1fr 1fr;
     }
-    
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
+}
 
-    .vertical-divider {
-        display: none;
+@media (max-width: 480px) {
+    .lecturers-grid {
+        grid-template-columns: 1fr;
     }
+}
 
-    .sponsor-logos {
-        margin-top: 15px;
-    }
+/* Info Block Styling with Matching Background Color */
+.info-block {
+    margin-top: 30px;
+    padding: 15px 20px;
+    background-color: #F9F6F1; /* Same as main background color */
+    border-left: 5px solid #d4b595; /* Subtle border for structure */
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
+}
+
+/* Title Styling */
+.block-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d4b595;
+}
+
+/* Subtle Hover Effect */
+.info-block:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow on hover */
 }
