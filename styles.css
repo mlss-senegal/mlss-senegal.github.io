@@ -13,17 +13,16 @@ body {
     padding-top: 60px;
 }
 
-.content-container {
-    display: grid;
-    grid-template-columns: 4fr 1fr; /* Main content (80%) and sidebar (20%) */
-    gap: 20px;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0;
+/* Monospace styling for intro paragraph */
+.intro-monospace {
+    font-family: monospace;
+    font-size: 1em;
+    color: #333333;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-/* Header Section */
+/* Header */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -49,23 +48,24 @@ body {
     font-size: 1.1em;
 }
 
-/* Main Content (Block A) */
+/* Main Content */
+.content-container {
+    display: flex;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 .main-content {
     padding-right: 20px;
 }
 
-.intro-monospace {
-    font-family: monospace;
-    font-size: 1em;
-    color: #333333;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-/* Lecturer Grid Layout */
+/* Lecturers Grid */
 .lecturers-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger screens */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
     list-style: none;
@@ -79,12 +79,11 @@ body {
     text-align: center;
 }
 
-/* Enlarged Circular Lecturer Photo */
 .lecturer-photo {
-    width: 120px; /* Increased width */
-    height: 120px; /* Increased height */
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 50%; /* Keeps the circular shape */
+    border-radius: 50%;
     margin-bottom: 5px;
 }
 
@@ -95,7 +94,7 @@ body {
     color: #333333;
     text-decoration: none;
     margin-bottom: 3px;
-    transition: color 0.6s ease; /* Adds a smooth, slower transition */
+    transition: color 0.6s ease;
 }
 
 .lecturer-name:hover {
@@ -104,60 +103,65 @@ body {
 
 .workplace {
     font-size: 0.9em;
-    color: #555555; /* Dark gray */
+    color: #555555;
 }
 
-/* Sidebar (Block B) */
-.sidebar {
+/* Footer */
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f3ede2;
     padding: 20px;
-    text-align: center;
 }
 
-/* Footer Styling */
-footer.sidebar {
-    background-color: #f3ede2;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
 }
 
-footer .sidebar-content p {
-    display: inline; /* Ensures content is in one line */
+.contact-info {
+    text-align: left;
     font-size: 1em;
     color: #333333;
 }
 
-.sidebar-link {
-    color: #4A403A;
-    text-decoration: none;
+.vertical-divider {
+    width: 1px;
+    height: 50px;
+    background-color: #ccc;
+    margin: 0 20px;
 }
 
-.sidebar-link:hover {
-    color: #8A7E72;
-    text-decoration: underline;
+.sponsor-logos {
+    display: flex;
+    gap: 15px;
 }
 
-/* Responsive Design */
+.sponsor-logo {
+    width: auto;
+    height: 50px; /* Uniform height for proportionate scaling */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
     .content-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
     }
 
-    .lecturers-grid {
-        grid-template-columns: 1fr 1fr; /* 2 columns on medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .lecturers-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
+    .vertical-divider {
+        display: none;
     }
 
-    .lecturer-photo {
-        width: 80px; /* Slightly reduced for small screens */
-        height: 80px;
+    .sponsor-logos {
+        margin-top: 15px;
     }
 }
-
-
