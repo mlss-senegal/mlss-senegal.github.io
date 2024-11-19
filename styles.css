@@ -177,3 +177,11 @@ body {
 .info-block:hover {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Slightly stronger shadow on hover */
 }
+
+
+.sponsor-logo {
+    width: auto; /* Maintain aspect ratio */
+    height: 50px; /* Set a consistent height */
+    max-width: 100px; /* Optional: Prevent excessively wide logos */
+    object-fit: contain; /* Ensures logos fit within the dimensions without distortion */
+}
