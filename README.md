@@ -14,7 +14,7 @@ For questions or inquiries about MLSS Senegal, feel free to reach out:
 - **Email**: [mlss.senegal2025@gmail.com](mailto:mlss.senegal2025@gmail.com)
 - **Website**: [mlss-senegal.github.io](https://mlss-senegal.github.io)
 
-Alternatively, you can use contact adilsalim@microsoft.com or e_ndiaye@apple.com to send us a message. 
+Alternatively, you can use adilsalim@microsoft.com or e_ndiaye@apple.com to send us a message. 
 
 We will get back to you as soon as possible ;-)
 
