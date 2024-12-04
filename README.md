@@ -1,4 +1,4 @@
-# MLSS Senegal Website
+# MLSS Senegal'25
 
 Welcome to the repository for the **Machine Learning Summer School (MLSS) Senegal** official website! This site is the primary portal for information about the upcoming MLSS Senegal 2025 event.
 
