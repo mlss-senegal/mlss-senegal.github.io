@@ -185,3 +185,74 @@ body {
     max-width: 100px; /* Optional: Prevent excessively wide logos */
     object-fit: contain; /* Ensures logos fit within the dimensions without distortion */
 }
+
+/* Coordinators Grid */
+.coordinators-grid {
+    margin-top: 20px;
+}
+
+.coordinators-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center all elements horizontally */
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    gap: 20px; /* Add spacing between items */
+}
+
+.logo {
+    text-align: center; /* Ensure the text inside the logo is centered */
+    flex: 1; /* Allow the logo to take up equal space */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1; /* Allow the links to take equal space */
+    justify-content: flex-end; /* Align links to the right */
+}
+
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Align the logos vertically */
+    flex-wrap: wrap; /* Allow logos to wrap to the next line if necessary */
+    gap: 20px; /* Add spacing between logos */
+    margin-top: 15px; /* Optional: Add some spacing above the logos */
+}
+
+
+.sponsor-logos {
+    display: flex;
+    justify-content: center; /* Center the logos horizontally */
+    align-items: center; /* Align the logos vertically */
+    flex-wrap: wrap; /* Allow logos to wrap to the next line if necessary */
+    gap: 30px; /* Increase spacing between logos */
+    margin-top: 20px; /* Add spacing above the logo section */
+}
+
+.sponsor-logo {
+    height: 70px; /* Increase the height of logos */
+    max-width: 150px; /* Prevent logos from being too wide */
+    object-fit: contain; /* Maintain aspect ratio without distortion */
+    margin: 0 10px; /* Add some spacing around each logo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+}
+
+/* Hover effect for logos */
+.sponsor-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
