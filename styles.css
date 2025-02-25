@@ -16,7 +16,7 @@ body {
 /* Header */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Center navbar contents */
     align-items: center;
     padding: 15px 5%;
     background-color: #FFFFFF;
@@ -27,10 +27,22 @@ body {
     z-index: 1000;
 }
 
+.navbar .logo {
+    text-align: center;
+    flex: none; /* Prevent it from stretching */
+}
+
 .nav-links {
     display: flex;
     gap: 20px;
+    flex: none; /* Prevent it from stretching */
+    justify-content: center; /* Center links */
 }
+
+.navbar > * {
+    flex-grow: 0; /* Prevent stretching */
+}
+
 
 .nav-links a {
     color: #333333;
