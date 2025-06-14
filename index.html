@@ -3,16 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MLSS Senegal 2025</title>
+    <title>MLSS-Senegal 2025</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* --- Pastel block title color themes --- */
+        .block-title.purple  { border-left: 8px solid #D7BDE2; background: #F5F2FA; }
+        .block-title.green   { border-left: 8px solid #A3E4D7; background: #F0FBF9; }
+        .block-title.yellow  { border-left: 8px solid #FCF3CF; background: #FFFDE8; }
+        .block-title.blue    { border-left: 8px solid #A9CCE3; background: #EFF8FB; }
+        .block-title.orange  { border-left: 8px solid #F9E79F; background: #FFFAE3; }
+        .block-title.pink    { border-left: 8px solid #F5CBA7; background: #FFF7F2; }
+        .block-title.gold    { border-left: 8px solid goldenrod; background: #FFF8DC; color: goldenrod;}
+        .block-title.silver  { border-left: 8px solid #aaa; background: #F8F8F8; color: #aaa;}
+        .block-title.bronze  { border-left: 8px solid #cd7f32; background: #F9E7D5; color: #cd7f32;}
+
+        .subsection-title.gold { color: goldenrod; }
+        .subsection-title.silver { color: #888; }
+        .subsection-title.bronze { color: #cd7f32; }
+        .subsection-title { font-weight: bold; margin-top: 24px; margin-bottom: 6px;}
+
+        /* Pastel hover for lecturers */
+        .lecturer-name.pm:hover        { color: #A3E4D7; }  /* pastelGreen */
+        .lecturer-name.opt:hover       { color: #F9E79F; }  /* pastelOrange */
+        .lecturer-name.scaling:hover   { color: #D7BDE2; }  /* pastelPurple */
+        .lecturer-name.transport:hover { color: #AED6F1; }  /* pastelTeal */
+        .lecturer-name.rl:hover        { color: #F5CBA7; }  /* pastelPink */
+        .lecturer-name.bio:hover       { color: #FCF3CF; }  /* pastelYellow */
+        .lecturer-name.ot:hover        { color: #A9CCE3; }  /* pastelBlue */
+        .lecturer-name.dist:hover      { color: #F2F4F8; }  /* lectures */
+        .lecturer-name.dp:hover        { color: #F5CBA7; }  /* pastelPink */
+        .lecturer-name.diffusion:hover { color: #A9CCE3; }  /* pastelBlue */
+        .lecturer-name.nlp:hover       { color: #D7BDE2; }  /* pastelPurple */
+        .lecturer-name.fed:hover       { color: #A3E4D7; }  /* pastelGreen */
+        .lecturer-name.lt:hover        { color: #FADBD8; }  /* pastelCoral */
+        .lecturer-name.pref:hover      { color: #F9E79F; }  /* pastelOrange */
+
+        .lecturer-title {
+            font-style: italic;
+            font-size: 0.98em;
+            color: #444;
+            margin-top: 3px;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
         <nav class="navbar">
             <div class="logo">
-                <span class="monospace">MLSS Senegal 2025</span><br>
+                <span class="monospace">MLSS-Senegal, 2025</span><br>
                 <em style="font-size: 0.9em; display: block; text-align: center;">June 23 - July 4</em>
             </div>
             <ul class="nav-links">
@@ -25,341 +64,317 @@
 
     <!-- Main Content Container -->
     <div class="content-container">
-        <div class="main-content">
-            <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
-            <p class="intro-monospace">
-                The <a href="http://mlss.cc" class="hover-link" target="_blank">Machine Learning Summer School (MLSS)</a> series, established in 2002, aims to advance knowledge in modern statistical machine learning and inference. Recognizing the growing demand for machine learning expertise, MLSS bridges the gap for students and researchers by providing intensive courses on topics ranging from fundamentals to state-of-the-art methods.
-            We are proud to bring this globally renowned series to West Africa for the first time, with Senegal as our host country. MLSS Senegal 2025 offers PhD students and advanced learners a unique opportunity to engage with top experts and explore cutting-edge techniques in machine learning.
-            </p>
 
-            <!-- Subtle Horizontal Line -->
-            <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
+        <!-- Introduction -->
+        <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
+        <p class="intro-monospace">
+            The <a href="http://mlss.cc" class="hover-link" target="_blank">Machine Learning Summer School (MLSS)</a> series, established in 2002, aims to advance knowledge in modern statistical machine learning and inference. Recognizing the growing demand for machine learning expertise, MLSS bridges the gap for students and researchers by providing intensive courses on topics ranging from fundamentals to state-of-the-art methods.<br>
+            We are delighted to bring this globally renowned series to West Africa for the first time, with Senegal as our host country. MLSS Senegal 2025 offers PhD students and advanced learners a unique opportunity to engage with top experts and explore cutting-edge techniques in machine learning.
+        </p>
+        <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
 
-            <!-- Speaker Preview -->
-            <h3 class="monospace">Speaker Lineup Preview – More to Come!</h3>
 
-<!-- Lecturers Grid -->
-<ul class="lecturers-grid">
+ <h3 class="block-title rose">Lecturer Lineup</h3>
+<ul class="lecturers-grid purple">
     <li>
-        <img src="images/Adji_Bousso_Dieng.jpg" alt="Adji Bousso Dieng" class="lecturer-photo">
-        <a href="https://adjiboussodieng.org" target="_blank" class="lecturer-name">Adji Bousso Dieng</a>
+        <img src="images/Adji_Bousso_Dieng.jpg" alt="Adji Bousso Dieng" class="lecturer-photo border-purple">
+        <a href="https://adjiboussodieng.org" target="_blank" class="lecturer-name hover-purple">Adji Bousso Dieng</a>
         <span class="workplace">Princeton</span>
-        <span class="title"> Foundations of Probabilistic Modeling </span>
+        <span class="lecturer-title"><em>Probabilistic Modeling</em></span>
     </li>
     <li>
-        <img src="images/Ashia_Wilson.webp" alt="Ashia Wilson" class="lecturer-photo">
-        <a href="https://www.ashiawilson.com" target="_blank" class="lecturer-name">Ashia Wilson</a>
+        <img src="images/Ashia_Wilson.webp" alt="Ashia Wilson" class="lecturer-photo border-blue">
+        <a href="https://www.ashiawilson.com" target="_blank" class="lecturer-name hover-blue">Ashia Wilson</a>
         <span class="workplace">MIT</span>
-        <span class="title">Optimization for Machine Learning</span>
+        <span class="lecturer-title"><em>Optimization for Machine Learning</em></span>
     </li>
     <li>
-        <img src="images/Elvis_Dohmatob.jpeg" alt="Elvis Dohmatob" class="lecturer-photo">
-        <a href="https://www.concordia.ca/faculty/elvis-dohmatob.html" target="_blank" class="lecturer-name">Elvis Dohmatob</a>
+        <img src="images/Elvis_Dohmatob.jpeg" alt="Elvis Dohmatob" class="lecturer-photo border-purple">
+        <a href="https://www.concordia.ca/faculty/elvis-dohmatob.html" target="_blank" class="lecturer-name hover-purple">Elvis Dohmatob</a>
         <span class="workplace">Concordia University / Meta / Mila</span>
-        <span class="title">Mathematical Foundations of Neural Scaling Laws</span>
+        <span class="lecturer-title"><em>Mathematical Foundations of Neural Scaling Laws</em></span>
     </li>
     <li>
-        <img src="images/Franca_Hoffmann.jpeg" alt="Franca Hoffmann" class="lecturer-photo">
-        <a href="https://francahoffmann.com" target="_blank" class="lecturer-name">Franca Hoffmann</a>
+        <img src="images/Franca_Hoffmann.jpeg" alt="Franca Hoffmann" class="lecturer-photo border-orange">
+        <a href="https://francahoffmann.com" target="_blank" class="lecturer-name hover-orange">Franca Hoffmann</a>
         <span class="workplace">Caltech</span>
-        <span class="title">Generative Modeling and Sampling</span>
+        <span class="lecturer-title"><em>Foundations of Measure Transport & Applications</em></span>
     </li>
     <li>
-        <img src="images/Gergely_Neu.jpg" alt="Gergely Neu" class="lecturer-photo">
-        <a href="https://cs.bme.hu/~gergo/" target="_blank" class="lecturer-name">Gergely Neu</a>
+        <img src="images/Gergely_Neu.jpg" alt="Gergely Neu" class="lecturer-photo border-teal">
+        <a href="https://cs.bme.hu/~gergo/" target="_blank" class="lecturer-name hover-teal">Gergely Neu</a>
         <span class="workplace">Universitat Pompeu Fabra</span>
-        <span class="title"> Reinforcement Learning  </span>
+        <span class="lecturer-title"><em>Reinforcement Learning</em></span>
     </li>
     <li>
-        <img src="images/JP_Vert.jpg" alt="Jean-Philippe Vert" class="lecturer-photo">
-        <a href="https://jpvert.github.io" target="_blank" class="lecturer-name">Jean-Philippe Vert</a>
+        <img src="images/JP_Vert.jpg" alt="Jean-Philippe Vert" class="lecturer-photo border-yellow">
+        <a href="https://jpvert.github.io" target="_blank" class="lecturer-name hover-yellow">Jean-Philippe Vert</a>
         <span class="workplace">Owkin</span>
-        <span class="title">Foundation models for biology</span>
+        <span class="lecturer-title"><em>Foundation Models for Biology</em></span>
     </li>
     <li>
-        <img src="images/Marco_Cuturi.png" alt="Marco Cuturi" class="lecturer-photo">
-        <a href="http://marcocuturi.net" target="_blank" class="lecturer-name">Marco Cuturi</a>
+        <img src="images/Marco_Cuturi.png" alt="Marco Cuturi" class="lecturer-photo border-blue">
+        <a href="http://marcocuturi.net" target="_blank" class="lecturer-name hover-blue">Marco Cuturi</a>
         <span class="workplace">Apple</span>
-        <span class="title">Computational Optimal Transport</span>
+        <span class="lecturer-title"><em>Computational Optimal Transport</em></span>
     </li>
     <li>
-        <img src="images/Marieme_Ngom.jpeg" alt="Marieme Ngom" class="lecturer-photo">
-        <a href="https://www.mariemengom.com" target="_blank" class="lecturer-name">Marieme Ngom</a>
+        <img src="images/Marieme_Ngom.jpeg" alt="Marieme Ngom" class="lecturer-photo border-green">
+        <a href="https://www.mariemengom.com" target="_blank" class="lecturer-name hover-green">Marieme Ngom</a>
         <span class="workplace">Argonne National Laboratory</span>
-        <span class="title">Parallel and Distributed Deep Learning</span>
+        <span class="lecturer-title"><em>Parallel and Distributed Deep Learning</em></span>
     </li>
     <li>
-        <img src="images/Mathieu_Blondel.jpeg" alt="Mathieu Blondel" class="lecturer-photo">
-        <a href="https://mblondel.org" target="_blank" class="lecturer-name">Mathieu Blondel</a>
+        <img src="images/Mathieu_Blondel.jpeg" alt="Mathieu Blondel" class="lecturer-photo border-pink">
+        <a href="https://mblondel.org" target="_blank" class="lecturer-name hover-pink">Mathieu Blondel</a>
         <span class="workplace">Google DeepMind</span>
-        <span class="title">Differentiable Programming</span>
+        <span class="lecturer-title"><em>Differentiable Programming</em></span>
     </li>
     <li>
-        <img src="images/Maxime_Labonne.jpeg" alt="Maxime Labonne" class="lecturer-photo">
-        <a href="https://github.com/mlabonne" target="_blank" class="lecturer-name">Maxime Labonne</a>
-        <span class="workplace">Liquid AI</span>
-        <span class="title">Introduction to LLM Post-Training</span>
-    </li>
-    <li>
-        <img src="images/Minhyuk_Sung.png" alt="Minhyuk Sung" class="lecturer-photo">
-        <a href="https://mhsung.github.io/" target="_blank" class="lecturer-name">Minhyuk Sung</a>
+        <img src="images/Minhyuk_Sung.png" alt="Minhyuk Sung" class="lecturer-photo border-orange">
+        <a href="https://mhsung.github.io/" target="_blank" class="lecturer-name hover-orange">Minhyuk Sung</a>
         <span class="workplace">KAIST</span>
-        <span class="title">Diffusion Models</span>
+        <span class="lecturer-title"><em>Diffusion Models</em></span>
     </li>
     <li>
-        <img src="images/Natalie_Schluter.jpeg" alt="Natalie Schluter" class="lecturer-photo">
-        <a href="https://natschluter.github.io" target="_blank" class="lecturer-name">Natalie Schluter</a>
+        <img src="images/Natalie_Schluter.jpeg" alt="Natalie Schluter" class="lecturer-photo border-purple">
+        <a href="https://natschluter.github.io" target="_blank" class="lecturer-name hover-purple">Natalie Schluter</a>
         <span class="workplace">Apple</span>
-        <span class="title">Natural Language Processing</span>
+        <span class="lecturer-title"><em>Natural Language Processing</em></span>
     </li>
     <li>
-        <img src="images/Peter_Richtarik.jpeg" alt="Peter Richtarik" class="lecturer-photo">
-        <a href="https://richtarik.org" target="_blank" class="lecturer-name">Peter Richtarik</a>
+        <img src="images/Peter_Richtarik.jpeg" alt="Peter Richtarik" class="lecturer-photo border-green">
+        <a href="https://richtarik.org" target="_blank" class="lecturer-name hover-green">Peter Richtarik</a>
         <span class="workplace">KAUST</span>
-        <span class="title">Federated Learning</span>
+        <span class="lecturer-title"><em>Federated Learning</em></span>
     </li>
     <li>
-        <img src="images/Samory_Kpotufe.jpeg" alt="Samory Kpotufe" class="lecturer-photo">
-        <a href="https://www.columbia.edu/~skk2175/" target="_blank" class="lecturer-name">Samory Kpotufe</a>
+        <img src="images/Samory_Kpotufe.jpeg" alt="Samory Kpotufe" class="lecturer-photo border-pink">
+        <a href="https://www.columbia.edu/~skk2175/" target="_blank" class="lecturer-name hover-pink">Samory Kpotufe</a>
         <span class="workplace">Columbia</span>
-        <span class="title">Learning Theory</span>
+        <span class="lecturer-title"><em>Vignettes in Learning Theory: Performance Guarantees in i.i.d. and non-i.i.d. Settings</em></span>
     </li>
     <li>
-        <img src="images/Sanmi_Koyejo.png" alt="Sanmi Koyejo" class="lecturer-photo">
-        <a href="https://cs.stanford.edu/~sanmi/" target="_blank" class="lecturer-name">Sanmi Koyejo</a>
+        <img src="images/Sanmi_Koyejo.png" alt="Sanmi Koyejo" class="lecturer-photo border-coral">
+        <a href="https://cs.stanford.edu/~sanmi/" target="_blank" class="lecturer-name hover-coral">Sanmi Koyejo</a>
         <span class="workplace">Stanford</span>
-        <span class="title">Truthworthy AI</span>
+        <span class="lecturer-title"><em>Machine Learning from Human Preferences</em></span>
     </li>
 </ul>
 
-            <!-- Application Block -->
-            <div class="info-block">
-                <h3 class="block-title" id="application">Application</h3>
-                <div class="block-content">
+        <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
 
-<p>
-  <strong>Application Period:</strong> 
-  <del>December 15 – February 28</del> → 
-  <span style="font-weight: bold; color: #d9534f;">
-    New deadline: March 14, 2025 (AoE)
-  </span>
-</p>
 
-<p>
-  <strong>Notification of Acceptance:</strong> 
-  <del>March 31</del> → 
-  <span style="font-weight: bold; color: #d9534f;">
-    New deadline: April 4, 2025 (AoE)
-  </span>
-  <br>
-  <span style="font-size: 0.95em;">
-    📬 Please check your <strong>spam folder</strong>. If you haven’t received an email, feel free to <a href="mailto:mlss.senegal2025@gmail.com">contact us directly</a>.
-  </span>
-</p>
+        <!-- Application Block -->
+        <h3 class="block-title purple" id="application">Application</h3>
+        <!-- <div class="info-block"> -->
+        <div class="info-block purple">
+            <p>
+                <strong>Application Period:</strong> 
+                <del>December 15 – February 28</del> → 
+                <span style="font-weight: bold; color: #d9534f;">
+                    New deadline: March 14, 2025 (AoE)
+                </span>
+            </p>
+            <p>
+                <strong>Notification of Acceptance:</strong> 
+                <del>March 31</del> → 
+                <span style="font-weight: bold; color: #d9534f;">
+                    New deadline: April 4, 2025 (AoE)
+                </span>
+                <br>
+                <span style="font-size: 0.95em;">
+                    📬 Please check your <strong>spam folder</strong>. If you haven’t received an email, feel free to <a href="mailto:mlss.senegal2025@gmail.com">contact us directly</a>.
+                </span>
+            </p>
+            <p><strong>Fees:</strong> $450 due on May 9 (AOE)</p>
+            <p>
+                The application process is open to PhD students, post-docs, and other advanced learners. Applicants are required to submit a one-page self-recommendation letter explaining how the summer school will benefit them, along with a one-page CV summarizing their contributions in machine learning.
+            </p>
+            <hr class="section-separator">
+            <p>
+                <strong>
+                    Applications must be submitted through the 
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqJy1NQGfulxc4WQS8CL3nJcPEmS_WlfaVpbMpip_J8TfQTg/viewform?usp=header" target="_blank">
+                        Application Form
+                    </a>.
+                </strong>
+            </p>
+            <hr class="section-separator">
+            <em>
+                <strong>If you require financial support (e.g., registration fee waiver, accommodation, travel assistance), please indicate this in your application form.</strong>
+                Please note that the registration fee does not include accommodation. Participants are kindly expected to arrange their own lodging. To assist with this, we will provide detailed travel and accommodation information on our website in the coming weeks. 
+            </em>
+        </div>
 
-                    <p><strong>Fees:</strong> $450 due on May 9 (AOE) </p>
-                    <p>
-                        The application process is open to PhD students, post-docs, and other advanced learners. Applicants are required to submit a one-page self-recommendation letter explaining how the summer school will benefit them, along with a one-page CV summarizing their contributions in machine learning. <br>
-                    </p>
-                    <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
-                    <p>
-                        <strong>
-                            Applications must be submitted through the 
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqJy1NQGfulxc4WQS8CL3nJcPEmS_WlfaVpbMpip_J8TfQTg/viewform?usp=header" target="_blank">
-                                Application Form
-                            </a>.
-                        </strong>
-                    </p>
-                    <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
-                    <p>
-                        <em>
-                            <p><strong>If you require financial support (e.g., registration fee waiver, accommodation, travel assistance), please indicate this in your application form.</strong></p>
-                            Please note that the registration fee does not include accommodation. Participants are kindly expected to arrange their own lodging. To assist with this, we will provide detailed travel and accommodation information on our website in the coming weeks. 
-                        </em>
-                    </p>
-                </div>
+        <!-- Sponsors Section -->
+
+        <h3 class="block-title moss">Sponsors</h3>
+        <div class="info-block moss">
+            <!-- <p>We are grateful for the support of our sponsors:</p> -->
+            <!-- Platinum Sponsor
+            <h4 class="subsection-title gold">Platinum Sponsor</h4>
+            <div class="sponsor-logos">
+                <a href="https://microsoft.com" target="_blank">
+                    <img src="images/microsoft_logo.jpeg" alt="Microsoft Logo" class="sponsor-logo">
+                </a>
+            </div> -->
+            <!-- Gold Sponsors -->
+            <h4 class="subsection-title gold">Gold</h4>
+            <div class="sponsor-logos">
+                <a href="https://ai.meta.com" target="_blank">
+                    <img src="images/meta_logo.svg" alt="Meta Logo" class="sponsor-logo">
+                </a>
+                <a href="https://mistral.ai" target="_blank">
+                    <img src="images/mistral_logo.webp" alt="Mistral Logo" class="sponsor-logo">
+                </a>
+                <a href="https://microsoft.com" target="_blank">
+                    <img src="images/microsoft_logo.jpeg" alt="Microsoft Logo" class="sponsor-logo">
+                </a>
+                <a href="https://aws.amazon.com" target="_blank">
+                    <img src="images/aws_logo.png" alt="aws Logo" class="sponsor-logo">
+                </a>
+                <a href="https://deepmind.google/" target="_blank">
+                    <img src="images/DeepMind_logo.png" alt="deepmind Logo" class="sponsor-logo">
+                </a>
             </div>
-
-<!-- Sponsors Section -->
-<div class="info-block" id="sponsors-section">
-    <h3 class="block-title">Sponsors</h3>
-    <div class="block-content">
-        <p>We are grateful for the support of our sponsors:</p>
-
-        <!-- Platinum Sponsor -->
-        <h4 class="subsection-title">Platinum Sponsor</h4>
-        <div class="sponsor-logos">
-            <a href="https://microsoft.com" target="_blank">
-                <img src="images/microsoft_logo.jpeg" alt="Microsoft Logo" class="sponsor-logo">
-            </a>
+            <!-- Silver Sponsor -->
+            <h4 class="subsection-title silver">Silver</h4>
+            <div class="sponsor-logos">
+                <a href="https://machinelearning.apple.com" target="_blank">
+                    <img src="images/apple_logo.png" alt="Apple Logo" class="sponsor-logo">
+                </a>
+                <a href="https://royam-hotel-saly.com" target="_blank">
+                    <img src="images/royam_logo.png" alt="Royam Logo" class="sponsor-logo">
+                </a>
+            </div>
+            <!-- Bronze Sponsor -->
+            <h4 class="subsection-title bronze">Bronze</h4>
+            <div class="sponsor-logos">
+                <a href="https://ai-hubsenegal.sn/en/" target="_blank">
+                    <img src="images/aihubs_logo.png" alt="AI Hubs Senegal Logo" class="sponsor-logo">
+                </a>
+                <a href="https://sn.ambafrance.org/" target="_blank">
+                    <img src="images/ambassade.png" alt="La France au Sénégal" class="sponsor-logo">
+                </a>
+                <a href="https://www.mctn.sn/" target="_blank">
+                    <img src="images/mctn.jpg" alt="MCTN" class="sponsor-logo">
+                </a>
+                <a href="https://ai-hubsenegal.sn/en/" target="_blank">
+                    <img src="images/senhubai.png" alt="Projet SenHubAI" class="sponsor-logo">
+                </a>
+            </div>
+            <!-- Organizing Partners -->
+            <h4 class="subsection-title blue">Organizing Partners</h4>
+            <div class="sponsor-logos">
+                <a href="https://aims-senegal.org/fr/" target="_blank">
+                    <img src="images/aimssenegal_logo.png" alt="AIMS Senegal Logo" class="sponsor-logo">
+                </a>
+                <a href="https://galsen.ai" target="_blank">
+                    <img src="images/galsenai_logo.png" alt="Galsen AI Logo" class="sponsor-logo">
+                </a>
+            </div>
         </div>
 
-        <!-- Gold Sponsors -->
-        <h4 class="subsection-title">Gold Sponsors</h4>
-        <div class="sponsor-logos">
-            <a href="https://ai.meta.com" target="_blank">
-                <img src="images/meta_logo.svg" alt="Meta Logo" class="sponsor-logo">
-            </a>
-            <a href="https://mistral.ai" target="_blank">
-                <img src="images/mistral_logo.webp" alt="Mistral Logo" class="sponsor-logo">
-            </a>
+        <!-- Travel Info -->
+        <h3 class="block-title blue">Travel information</h3>
+        <div class="info-block blue">
+        <!-- <div class="section-content blue"> -->
+            <p><strong>Dates:</strong> June 23 - July 4</p>
+            <p><strong>Location:</strong> The African Institute for Mathematical Sciences <a href="https://aims-senegal.org/fr/" target="_blank" class="hover-link">AIMS-Senegal</a></p>
+            <p>AIMS Mbour is a scenic location situated along the Atlantic coast of Senegal. The venue is approximately a 1.5-hour drive from Dakar city center and around 30 kilometers from Blaise Diagne International Airport, offering convenient access for international participants.</p>
+            <hr class="section-separator">
+            <h4>Vaccination Requirements</h4>
+            <p><strong>Hepatitis A:</strong> A single dose should be administered at least 15 days before departure, with a booster dose recommended 1 to 3 (or up to 5) years later. For children, vaccination is available from the age of 1 year.</p>
+            <p><strong>Yellow Fever:</strong> A single dose must be administered at least 10 days before travel. For children, vaccination is available from 9 months of age (or in specific circumstances between 6 and 9 months).</p>
+            <p>For more information, visit: <a href="https://www.pasteur.fr/fr/centre-medical/preparer-son-voyage/senegal" target="_blank" class="hover-link">Road to Senegal</a></p>
         </div>
 
-        <!-- Silver Sponsor -->
-        <h4 class="subsection-title">Silver Sponsor</h4>
-        <div class="sponsor-logos">
-            <a href="https://machinelearning.apple.com" target="_blank">
-                <img src="images/apple_logo.png" alt="Apple Logo" class="sponsor-logo">
-            </a>
+        <!-- Program Committee -->
+        <h3 class="block-title pink">Program committee</h3>
+        <div class="info-block pink">
+            <p>If you’re interested in contributing to MLSS Senegal 2025, we welcome your support and ideas. Together, we aim to create a transformative learning experience for all participants. We are also deeply grateful for the invaluable support of local contributors, international advisors, and volunteers whose efforts ensure the success of this event. A full list of contributors and collaborators will be shared as the event approaches.</p>
+            <ul class="lecturers-grid">
+                <li>
+                    <img src="images/awa_dieng.jpeg" alt="Awa Dieng" class="lecturer-photo border-pink">
+                    <a href="https://sites.google.com/view/awadieng" class="lecturer-name hover-pink">Awa Dieng</a>
+                    <span class="workplace">DeepMind</span>
+                </li>
+                <li>
+                    <img src="images/bamba_Diouf.jpeg" alt="Bamba Diouf" class="lecturer-photo border-pink">
+                    <a href="mailto:diouc@amazon.com" class="lecturer-name hover-pink">Bamba Diouf</a>
+                    <span class="workplace">Amazon</span>
+                </li>
+                <li>
+                    <img src="images/Derguene_Mbaye.jpeg" alt="Derguene Mbaye" class="lecturer-photo border-pink">
+                    <a href="https://sn.linkedin.com/in/derguene-mbaye" class="lecturer-name hover-pink">Derguene Mbaye</a>
+                    <span class="workplace">Cheikh Anta Diop University</span>
+                </li>
+                <li>
+                    <img src="images/mouhamadane.jpg" alt="Mouhamadane MBOUP" class="lecturer-photo border-pink">
+                    <a href="mailto:mouhamadane.mboup@galsen.ai" class="lecturer-name hover-pink">Mouhamadane Mboup</a>
+                    <span class="workplace">Galsen AI</span>
+                </li>
+                <li>
+                    <img src="images/Ismaila_Seck.jpeg" alt="Ismaila Seck" class="lecturer-photo border-pink">
+                    <a href="https://sn.linkedin.com/in/ismailaseck/fr?original_referer=https%3A%2F%2Fwww.google.com%2F" class="lecturer-name hover-pink">Ismaila Seck</a>
+                    <span class="workplace">Lengo AI</span>
+                </li>
+                <li>
+                    <img src="images/Solym_Manou_abi.png" alt="Solym Manou-Abi" class="lecturer-photo border-pink">
+                    <a href="https://sites.google.com/view/solymmanou-abi/home" class="lecturer-name hover-pink">Solym Manou-Abi</a>
+                    <span class="workplace">University of Poitiers</span>
+                </li>
+            </ul>
         </div>
 
-        <!-- Bronze Sponsor -->
-        <h4 class="subsection-title">Bronze Sponsor</h4>
-        <div class="sponsor-logos">
-            <!-- aihubsn -->
-            <a href="https://ai-hubsenegal.sn/en/" target="_blank">
-                <img src="images/aihubs_logo.png" alt="AI Hubs Senegal Logo" class="sponsor-logo">
-            </a>
-            <!-- ambassade -->
-             <a href="https://sn.ambafrance.org/" target="_blank">
-                <img src="images/ambassade.png" alt="La France au Sénégal" class="sponsor-logo">
-            </a>
-            <!-- mctn -->
-            <a href="https://www.mctn.sn/" target="_blank">
-                <img src="images/mctn.jpg" alt="MCTN" class="sponsor-logo">
-            </a>
-            <!-- senhubai -->
-            <a href="https://ai-hubsenegal.sn/en/" target="_blank">
-                <img src="images/senhubai.png" alt="Projet SenHubAI" class="sponsor-logo">
-            </a>
+        <!-- Organizers -->
+        <h3 class="block-title green">Organizers</h3>
+        <div class="info-block green">
+            <ul class="lecturers-grid">
+                <li>
+                    <img src="images/Coura_Balde.png" alt="Coura Balde" class="lecturer-photo border-green">
+                    <a href="mailto:coura.balde@aims-senegal.org" class="lecturer-name hover-green">Coura Balde</a>
+                    <span class="workplace">AIMS Senegal</span>
+                </li>
+                <li>
+                    <img src="images/Adil_Salim.jpeg" alt="Adil Salim" class="lecturer-photo border-green">
+                    <a href="mailto:adilsalim@microsoft.com" class="lecturer-name hover-green">Adil Salim</a>
+                    <span class="workplace">Microsoft</span>
+                </li>
+                <li>
+                    <img src="images/Eugene_Ndiaye.jpeg" alt="Eric Ndiaye" class="lecturer-photo border-green">
+                    <a href="mailto:e_ndiaye@apple.com" class="lecturer-name hover-green">Eugene Ndiaye</a>
+                    <span class="workplace">Apple</span>
+                </li>
+            </ul>
         </div>
 
-        <!-- Organizing Partners -->
-        <h4 class="subsection-title">Organizing Partners</h4>
-        <div class="sponsor-logos">
-            <a href="https://aims-senegal.org/fr/" target="_blank">
-                <img src="images/aimssenegal_logo.png" alt="AIMS Senegal Logo" class="sponsor-logo">
-            </a>
-            <a href="https://galsen.ai" target="_blank">
-                <img src="images/galsenai_logo.png" alt="Galsen AI Logo" class="sponsor-logo">
-            </a>
+
+    <!-- <section class="section-block green">
+        <h3 class="block-title green">Organizers</h3>
+        <div class="info-block green">
+            <ul class="lecturers-grid">
+                <li>
+                    <img src="images/Coura_Balde.png" alt="Coura Balde" class="lecturer-photo border-green">
+                    <a href="mailto:coura.balde@aims-senegal.org" class="lecturer-name hover-green">Coura Balde</a>
+                    <span class="workplace">AIMS Senegal</span>
+                </li>
+                <li>
+                    <img src="images/Adil_Salim.jpeg" alt="Adil Salim" class="lecturer-photo border-green">
+                    <a href="mailto:adilsalim@microsoft.com" class="lecturer-name hover-green">Adil Salim</a>
+                    <span class="workplace">Microsoft</span>
+                </li>
+                <li>
+                    <img src="images/Eugene_Ndiaye.jpeg" alt="Eric Ndiaye" class="lecturer-photo border-green">
+                    <a href="mailto:e_ndiaye@apple.com" class="lecturer-name hover-green">Eugene Ndiaye</a>
+                    <span class="workplace">Apple</span>
+                </li>
+            </ul>
         </div>
+    </section> -->
+
     </div>
-</div>
-
-            
-         <!-- Venue Block -->
-        <div class="info-block">
-            <h3 class="block-title">Travel information</h3>
-            <div class="block-content">
-                <p><strong>Dates:</strong> June 23 - July 4</p>
-                <p><strong>Location:</strong>  The African Institute for Mathematical Sciences <a href="https://aims-senegal.org/fr/" target="_blank" class="hover-link">AIMS-Senegal</a></p>
-                <p>
-                    AIMS Mbour is a scenic location situated along the Atlantic coast of Senegal. The venue is approximately a 1.5-hour drive from Dakar city center and around 30 kilometers from Blaise Diagne International Airport, offering convenient access for international participants.
-                </p>
-            </div>
-
-            <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
-
-            <h4 class="block-content">Vaccination Requirements</h4>
-            <div class="block-content">
-                <p><strong>Hepatitis A:</strong> A single dose should be administered at least 15 days before departure, with a booster dose recommended 1 to 3 (or up to 5) years later. For children, vaccination is available from the age of 1 year.</p>
-                
-                <p><strong>Yellow Fever:</strong> A single dose must be administered at least 10 days before travel. For children, vaccination is available from 9 months of age (or in specific circumstances between 6 and 9 months).</p>
-
-                <p>For more information, visit: <a href="https://www.pasteur.fr/fr/centre-medical/preparer-son-voyage/senegal" target="_blank" class="hover-link">Road to Senegal</a></p>
-            <hr style="border: none; border-top: 1px solid #e0ddd8; margin: 30px 0;">
-                <h4 class="block-content">Hotels</h4>
-                <div class="block-content">
-                    <p><strong><a href="https://www.hotelclubsafari.com/">Hotel safari:</a></strong> Email :info@hotelclubsafari.com  Tel : +221 33 957 19 91</p>
-                    <p><strong><a href="https://www.marrakis.com/">Hotel Keur Marrakis:</a></strong> Email :reservations.keur@marrakis.com  Tel : +221 33 954 74 54 / +221 77 277 87 18</p>
-                    <p><strong><a href="https://www.maison-couleur-passion.com/">Maison couleur passion :</a></strong> Email :contact@maison-couleur-passion.com  Tel : +221 77 556 39 38</p>
-                    <p><strong><a href="https://www.terralodge-senegal.com/">Terra Lodge :</a></strong> Email :reservation@terralodge-senegal.com  Tel : +221 78 102 79 59</p>
-                    <p><strong><a href="https://royam-hotel-saly.com/">Royam Hotel :</a></strong> Email :reservation@royamhotel.com  Tel : +221 33 957 20 71</p>
-                    <p><strong><a href="https://www.lesalyhotel.com/">Hôtel Club Les Filaos :</a></strong> Email :reservation.filaos@lesalyhotel.com  Tel : +221 33 957 11 19</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Coordinators Section -->
-        <div class="info-block" id="coordinators-section">
-            <h3 class="block-title">Program committee</h3>
-            <div class="coordinators-grid">
-                <p> If you’re interested in contributing to MLSS Senegal 2025, we welcome your support and ideas. Together, we aim to create a transformative learning experience for all participants.
-                We are also deeply grateful for the invaluable support of local contributors, international advisors, and volunteers whose efforts ensure the success of this event. A full list of contributors and collaborators will be shared as the event approaches. </p>
-                <ul class="lecturers-grid">
-
-                    <li>
-                        <img src="images/awa_dieng.jpeg" alt="Awa Dieng" class="lecturer-photo">
-                        <a href="https://sites.google.com/view/awadieng" class="lecturer-name">Awa Dieng</a>
-                        <span class="workplace">DeepMind</span>
-                    </li>
-                    
-                    <li>
-                        <img src="images/bamba_Diouf.jpeg" alt="Bamba Diouf" class="lecturer-photo">
-                        <a href="mailto:diouc@amazon.com" class="lecturer-name">Bamba Diouf</a>
-                        <span class="workplace">Amazon</span>
-                    </li>
-                    
-                    <li>
-                        <img src="images/Derguene_Mbaye.jpeg" alt="Derguene Mbaye" class="lecturer-photo">
-                        <a href="https://sn.linkedin.com/in/derguene-mbaye" class="lecturer-name">Derguene Mbaye</a>
-                        <span class="workplace">Cheikh Anta Diop University</span>
-                    </li>
-                    
-                    <li>
-                        <img src="images/mouhamadane.jpg" alt="Mouhamadane MBOUP" class="lecturer-photo">
-                        <a href="mailto:mouhamadane.mboup@galsen.ai" class="lecturer-name">Mouhamadane Mboup</a>
-                        <span class="workplace">Galsen AI</span>
-                    </li>
-                    
-                    <li>
-                        <img src="images/Ismaila_Seck.jpeg" alt="Ismaila Seck" class="lecturer-photo">
-                        <a href="https://sn.linkedin.com/in/ismailaseck/fr?original_referer=https%3A%2F%2Fwww.google.com%2F" class="lecturer-name">Ismaila Seck</a>
-                        <span class="workplace">Lengo AI</span>
-                    </li>
-                    
-                    <li>
-                        <img src="images/Solym_Manou_abi.png" alt="Solym Manou-Abi" class="lecturer-photo">
-                        <a href="https://sites.google.com/view/solymmanou-abi/home" class="lecturer-name">Solym Manou-Abi</a>
-                        <span class="workplace">University of Poitiers</span>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-
-
-<!-- Coordinators Section -->
-<div class="info-block" id="coordinators-section">
-    <h3 class="block-title">Organizers</h3>
-    <div class="coordinators-grid">
-        <p> <ul class="lecturers-grid">
-
-    <li>
-        <img src="images/Coura_Balde.png" alt="Coura Balde" class="lecturer-photo">
-        <a href="mailto:coura.balde@aims-senegal.org" class="lecturer-name">Coura Balde</a>
-        <span class="workplace">AIMS Senegal</span>
-    </li>
-    <li>
-        <img src="images/Adil_Salim.jpeg" alt="Adil Salim" class="lecturer-photo">
-        <a href="mailto:adilsalim@microsoft.com" class="lecturer-name">Adil Salim</a>
-        <span class="workplace">Microsoft</span>
-    </li>
-    <li>
-        <img src="images/Eugene_Ndiaye.jpeg" alt="Eric Ndiaye" class="lecturer-photo">
-        <a href="mailto:e_ndiaye@apple.com" class="lecturer-name">Eugene Ndiaye</a>
-        <span class="workplace">Apple</span>
-    </li>
-
-</ul>
-</div>
-</div>
-
-        </div>
-    </div>
-
-
 
 
     <!-- Footer Section -->
@@ -370,6 +385,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>
